@@ -28,7 +28,7 @@ export class AppController {
 
     // Return the URL as a response
     return {
-      url: 'http://localhost:8769' + url,
+      url: 'https://files.rivopelu.site' + url,
     };
   }
 }
