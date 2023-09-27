@@ -5,6 +5,7 @@ import { join } from 'path';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.use('/uploads', express.static(join(__dirname, '..', 'uploads')));
+  app.enableCors();
   await app.listen(8769);
 }
 bootstrap();
